@@ -1,15 +1,15 @@
-# Fitness Tracker Application
+# Health & Fitness Hub
 
-A console-based application designed to log and track daily fitness routines, built with a focus on back-end architecture and database integration. 
+An expanded console-based application designed to log and track both daily fitness routines and dietary intake. Built with a focus on scalable back-end architecture and multi-table database integration.
 
 ## Tech Stack
 * **Language:** C#
 * **Concepts:** Object-Oriented Programming (OOP)
-* **Database:** SQL Server
+* **Database:** SQL Server (Multi-table Relational Database)
 * **Data Access:** ADO.NET (SqlConnection, SqlCommand, SqlDataReader)
 
 ## Features
-* **Data Entry:** Users can input their daily workout focus and duration directly through the console interface.
-* **Persistent Storage:** Seamlessly connects to a local SQL Server database to safely store user exercise data.
-* **Data Retrieval:** Executes real-time SQL queries to pull workout history from the database and format it clearly in the console.
-* **Full CRUD Operations:** Handles Create and Read operations utilizing raw SQL commands sent via C#.
+* **Dual Tracking System:** Users can log both specific workout focus areas and individual meals/snacks through a unified console interface.
+* **Macro & Metric Storage:** Tracks exercise duration (minutes) alongside nutritional values (calories and protein grams).
+* **Multi-Table Relational Database:** Connects to a local SQL Server database utilizing separate tables (`Workouts` and `DietLog`) to organize user data efficiently.
+* **Secure Data Handling:** Executes real-time, parameterized SQL queries via C# to prevent SQL injection and perform full CRUD operations.
